@@ -1,3 +1,13 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-sbhmra');
+	src:url('fonts/icomoon.eot?#iefix-sbhmra') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?-sbhmra') format('truetype'),
+		url('fonts/icomoon.woff?-sbhmra') format('woff'),
+		url('fonts/icomoon.svg?-sbhmra#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 a
 {
 	color: #DD4F24;
@@ -39,7 +49,14 @@ header #avatar figcaption
 	background: #22BCE0;
 	float: right;
 	height: 50px;
-	padding: 0 2px;
+	line-height: 50px;
+}
+header #avatar figcaption:after
+{
+	content: "\e601";
+	font-family: icomoon;
+	font-size: 0.6em;
+	opacity: 0.5;
 }
 header #avatar img
 {
@@ -83,20 +100,41 @@ nav #flechita_nav
 	float: left;
 	margin-left: 0;
 }
+nav #flechita_nav a:after
+{
+	content: "\e602";
+	font-family: icomoon;
+	opacity: 0.6;
+	vertical-align: middle;
+}
 nav #flechita_nav a
 {
 	background: #22BCE0;
-	padding: 0.5em;
+	padding: 0.5em 0.3em;
 	text-decoration: none;
 }
 nav #publicar_nav
 {
+	background: #DD4F24;
 	float: right;
 	margin-right: 0;
+	padding-right: 1.0em;
+	position: relative;
+}
+nav #publicar_nav:after
+{
+	color: rgba(255,255,255,0.5);
+	content: "\e603";
+	font-family: "icomoon";
+	font-size: 1.8em;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 nav #publicar_nav a
 {
 	background: #DD4F24;
+	display: inline-block;
 	padding: 0.5em 1em;
 	text-decoration: none;
 }
@@ -116,6 +154,17 @@ nav #publicar_nav a
 {
 	color: #7A7A7A;
 	font-size: 0.9em;
+}
+#contenido .item .datos_item .guardar_item
+{
+	text-decoration: none;
+}
+#contenido .item .datos_item .guardar_item:after
+{
+	color: #FD5;
+	content: "\e604";
+	font-family: "icomoon";
+
 }
 #contenido .item .datos_item .tag_item
 {
@@ -156,4 +205,25 @@ nav #publicar_nav a
 	text-align: center;
 	top: 100%;
 	width: 96px;
+}
+#contenido .item .votacion a
+{
+	text-decoration: none;
+}
+#contenido .item .votacion .down:after,
+#contenido .item .votacion .up:after
+{
+	font-family: "icomoon";
+	font-size: 1em;
+	vertical-align: middle;
+}
+#contenido .item .votacion .down:after
+{
+	color: red;
+	content: "\e601";
+}
+#contenido .item .votacion .up:after
+{
+	color: green;
+	content: "\e600";
 }
