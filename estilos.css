@@ -20,6 +20,14 @@ body
 	font-size: 16px;
 	margin: 0;
 }
+footer
+{
+	background: #434343;
+	color: #A7A7A7;
+	padding: 1em 0;
+	text-align: center;
+	width: 100%;
+}
 header
 {
 	background: #434343;
@@ -138,6 +146,10 @@ nav #publicar_nav a
 	padding: 0.5em 1em;
 	text-decoration: none;
 }
+#bienvenida
+{
+	display: none;
+}
 #contenido
 {
 	margin: 1em;
@@ -164,6 +176,7 @@ nav #publicar_nav a
 	background: #878787;
 	border-radius: 4px;
 	color: white;
+	margin:  0 0 0 1em;
 	padding: 4px;
 	text-decoration: none;
 }
